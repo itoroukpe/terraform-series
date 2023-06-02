@@ -1,5 +1,6 @@
 
 # Block-1: **Terraform Settings Block**
+```
 terraform {
   required_version = "~> 1.0"         1.1.4/5/6/7   1.2/3/4/5 1.1.4/5/6/7
   required_providers {
@@ -8,9 +9,10 @@ terraform {
       version = "~> 3.0"
     }
   }
-
+```
   
   # Adding Backend as S3 for Remote State Storage with State Locking
+  ```
   backend "s3" {
     bucket = "terraform-mylandmark"
     key    = "prod/terraform.tfstate"
@@ -19,7 +21,7 @@ terraform {
     dynamodb_table = "terraform-lock"
   }
 }
-
+```
 resource "aws_dynamodb_table" “tf_lock" {
   name = "terraform-lock"
   hash_key = "LockID"
