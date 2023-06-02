@@ -65,7 +65,7 @@ output "ec2_instance_publicip" {
   description = "EC2 Instance Public IP"
   value = aws_instance.class25.public_ip
 }
-``
+```
 # Block-6: **Local Values Block**
 # Create S3 Bucket - with Input Variables & Local Values
 ```
