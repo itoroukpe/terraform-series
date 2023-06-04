@@ -30,9 +30,11 @@ b) **Benefits:**
 - Terraform uses declarative syntax to describe your Infrastructure as Code (IaC) infrastructure
 and then persist it in configuration files that can be shared, reviewed, edited, versioned,
 preserved, and reused.
-- Terraform configuration files can use either of two formats: Terraform domain-specific
+- Terraform configuration files can use either of two formats: 
+  i. Terraform domain-specific
 language (HashiCorpConfiguration Language format [HCL]), which is the recommended
-approach, or JSON format if the files need to be machine-readable.
+approach, or 
+  ii. JSON format if the files need to be machine-readable.
 - Configuration files that use the HCL format end with the .tf file extension;
 - Those using JSON format end with the .tf.json file extension.
 - The Terraform format is human-readable, while the JSON format is machine readable
