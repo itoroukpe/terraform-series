@@ -70,6 +70,10 @@ sudo rm -rf /usr/local/aws-cli
 
 # **Configure AWS Credentials in command line**
 ```
+sudo snap install aws-cli  # version 1.15.58, or
+sudo apt  install awscli   # version 1.22.34-1
+```
+```
 $ aws configure
 AWS Access Key ID [None]: AKIASUF7DEFKSIAWMZ7K
 AWS Secret Access Key [None]: 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
