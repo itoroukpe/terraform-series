@@ -9,6 +9,7 @@ a) **Infrastructure as a Code**
   - Easy to version control
   - Can create infrastructure in modular components
   - Gives you a template to follow for provisioning
+  - 
 b) **Benefits:**
   - Cost reduction
   - Increase in speed of deployment
