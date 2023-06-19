@@ -97,7 +97,7 @@ variable "mytuple" {
 variable "myobject" {
   type = object({ name = string, port = list(number) })
   default = {
-    name = "Landmark"
+    name = "Rondus"
     port = [22, 25, 80]
   }
 }
