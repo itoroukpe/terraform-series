@@ -26,6 +26,7 @@ mv terraform /usr/local/bin
 
 # Verify Version
 terraform version
+# TERRAFORM VERSION
 
 # To Uninstall Terraform (NOT REQUIRED)
 rm -rf /usr/local/bin/terraform
