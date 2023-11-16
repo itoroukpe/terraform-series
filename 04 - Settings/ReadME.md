@@ -14,7 +14,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.0"
+      version = ">= 3.0"
     }
   }
 }
@@ -31,7 +31,7 @@ cat $HOME/.aws/credentials
 ```t
 # Provider Block
 provider "aws" {
-  region  = us-west-2
+  region  = "us-west-2"
   profile = "default"
 }
 ```
