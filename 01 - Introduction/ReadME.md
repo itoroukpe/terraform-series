@@ -90,7 +90,7 @@ cat $HOME/.aws/credentials
 ```
 #**Command to reset your AWS credentials incase of a credentials error**:
 
-$ for var in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_SECURITY_TOKEN ; do eval unset $var ; done
+for var in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_SECURITY_TOKEN ; do eval unset $var ; done
 
 ## F) Windows OS - Terraform & AWS CLI Install
 - [Download Terraform](https://www.terraform.io/downloads.html)
@@ -120,15 +120,15 @@ $ for var in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_SECUR
 - [Linux OS - Terraform Install](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
 # Install Terraform on Ubuntu:
-     $sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
-     $curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-     $sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-     $sudo apt-get update && sudo apt-get install terraform
+     sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+     curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+     sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+     sudo apt-get update && sudo apt-get install terraform
      
 # Install AWS CLI
-$curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-$unzip awscliv2.zip
-$sudo ./aws/install
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 
 # Install Terraform on RHEL:
       **Install aws cli**
